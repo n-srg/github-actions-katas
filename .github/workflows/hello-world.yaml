@@ -2,6 +2,12 @@ name: JAVA CI
 
 on: push
 
+permissions:
+  actions: write
+  checks: write
+  packages: write
+  statuses: write
+
 env: # Set the secret as an input
   docker_username: ${{ github.actor }}
   docker_password: ${{ secrets.GITHUB_TOKEN }}
