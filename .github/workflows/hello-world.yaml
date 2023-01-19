@@ -8,6 +8,9 @@ jobs:
       - name: Clone-down
         uses: actions/checkout@v3 
 
+      - name: Test
+        uses: ci/unit-test-app.sh 
+
       - name: my-step
         run: ci/build-app.sh
 
